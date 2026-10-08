@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background-color: #f6f7fb;
+    color: #111827;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 20px 16px;
+}
+
+header h1 {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1050px;
+    margin: 30px auto;
+    padding: 0 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.recipe,
+.comments {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.recipe {
+    background-color: #fafafa;
+    border-radius: 12px;
+    padding: 14px;
+}
+
+h2,
+h3 {
+    font-weight: 700;
+}
+
+.recipe p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+input,
+textarea {
+    padding: 10px 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+button {
+    width: fit-content;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 12px;
+    background-color: #2563eb;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#error-message {
+    margin-top: 12px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #dc2626;
+    background-color: #fee2e2;
+    display: none;
+}
+
+#comments-list {
+    margin-top: 20px;
+}
+
+.comment {
+    padding: 14px;
+    margin-bottom: 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.comment-author {
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.comment-text {
+    margin: 0 0 10px;
+}
+
+.delete-button {
+    padding: 6px 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #dc2626;
+    border: 1px solid #dc2626;
+}
+
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}

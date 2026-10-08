@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Carnet Gourmand</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+    <h1>🍳 Le Carnet Gourmand</h1>
+</header>
+
+<main class="container">
+
+    <section class="recipe">
+        <h2>🍝 Pâtes à la carbonara</h2>
+
+        <p>
+            Une recette simple et gourmande de pâtes à la carbonara.
+        </p>
+
+        <h3>Ingrédients</h3>
+
+        <ul>
+            <li>400 g de pâtes</li>
+            <li>150 g de lardons</li>
+            <li>3 œufs</li>
+            <li>50 g de parmesan</li>
+        </ul>
+
+        <h3>Préparation</h3>
+
+        <p>
+            Faites cuire les pâtes. Faites revenir les lardons,
+            puis mélangez les pâtes avec les œufs et le parmesan.
+        </p>
+    </section>
+
+    <section class="comments">
+        <h2>💬 Commentaires</h2>
+
+        <form id="comment-form">
+
+            <label for="name">Nom</label>
+            <input type="text" id="name">
+
+            <label for="comment">Commentaire</label>
+            <textarea id="comment"></textarea>
+
+            <button type="submit">Publier</button>
+
+        </form>
+
+        <div id="error-message"></div>
+
+        <div id="comments-list"></div>
+    </section>
+
+</main>
+
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
